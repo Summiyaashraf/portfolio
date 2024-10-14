@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    color: ghostwhite;
+    background-color: rgb(18, 107, 107);
+  }
+  .rounded-img {
+    border-radius: 50%;
+    width: 150px;  
+    height: 150px; 
+    object-fit: cover; 
+  }
+  
+}
+
+@layer components {
+  .menuLink a {
+    padding: 8px 16px; 
+    border-radius: 4px; 
+    transition: background-color 0.3s ease; 
+    color: #333;
+  }
+
+  .menuLink a:hover {
+    background-color: rgba(0, 0, 0, 0.1); 
+  }
+
+  .tags {
+    background-color: aqua;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 3px 10px;
+    display: inline-block;
+    color: rgb(225, 171, 78);
+    font-size: 12px;
+  }
+
+  .tags:last-child {
+    margin-right: 0;
+  }
+
+  .tags:nth-child(2) {
+    background-color: darkorchid;
+  }
+
+  .tags:nth-child(3) {
+    background-color: rgb(215, 232, 115);
+  }
+
+  .tags:nth-child(4) {
+    background-color: rgb(193, 241, 124);
+  }
+
+  .tags:nth-child(5) {
+    background-color: rgb(238, 121, 193);
+  }
+
+  .tags:nth-child(6) {
+    background-color: rgb(62, 149, 243);
+  }
+}
+
+.heroText {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2C3E50;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.heroBackground {
+  background: linear-gradient(to right, #f7f7f7, #e1eec3);
+}
